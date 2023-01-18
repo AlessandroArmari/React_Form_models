@@ -7,7 +7,7 @@ const SimpleFormV2 = () => {
   const formSubmissionHandler = (event) => {
     event.preventDefault();
 
-    setUserNameTouched(true);
+    setUserNameTouched(true); //--->if I did not click the input, it behaves differently!
 
     if (!enteredUserNameIsValid) {
       console.log("Username not valid! Must'nt be empty!");
